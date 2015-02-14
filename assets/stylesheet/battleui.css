@@ -15,7 +15,12 @@ html,body{
       top:0;
       position:fixed;
       _position:absolute;
-  }
+}
+
+.backgroundRed{
+        background: #F01;
+
+}
 
 .main {
   height: 100%;

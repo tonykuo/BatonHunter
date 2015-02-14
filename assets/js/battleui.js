@@ -13,6 +13,7 @@ $(document).ready(function (){
   //blood obj init
   enemyHP = new HP(1000, $('#enemy-hp'));
   userHP = new HP(1000, $('#user-hp'));
+  var Blink;
   //  click lucky star
   $('#luckystar').fancybox({
     hideOnOverlayClick: false,
@@ -31,6 +32,9 @@ $(document).ready(function (){
   });
 });
 
-setInterval(function(){
-        $("#divtoBlink").toggleClass("backgroundRed");
-},1000)
+function clickBlink(){
+	console.log("click");
+	Blink= setInterval(function(){
+         $("#divtoBlink").toggleClass("backgroundRed");
+ },1000);
+};

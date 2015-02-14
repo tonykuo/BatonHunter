@@ -14,3 +14,7 @@ $(document).ready(function (){
   enemyHP = new HP(1000, $('#enemy-hp'));
   userHP = new HP(1000, $('#user-hp'));
 });
+
+setInterval(function(){
+        $("#divtoBlink").toggleClass("backgroundRed");
+},1000)

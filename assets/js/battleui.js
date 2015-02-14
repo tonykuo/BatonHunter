@@ -34,7 +34,10 @@ $(document).ready(function (){
 
 function clickBlink(){
 	console.log("click");
-	Blink= setInterval(function(){
+
+	$("#divtoBlink").show();
+
+	setInterval(function(){
          $("#divtoBlink").toggleClass("backgroundRed");
- },1000);
+ 	},1000);
 };
